@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  font-family: sans-serif, roboto;
+  font-weight: 100;
+}
+
+#main-header {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 60vh;
+  margin: 10vh auto 0 auto;
+  margin-bottom: 10vh;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#display {
+  text-align: right;
+  height: 20vh;
+  line-height: 70px;
+  padding: 5% 10%;
+  font-size: 350%;
+  border: 2px solid indigo;
+}
+
+.buttons {
+  display: grid;
+  border: 1px solid indigo;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  border: 0.5px solid indigo;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: none;
+  color: blue;
+}
+
+.button:hover {
+  background-color: lightgreen;
+  color: red;
+  transition: 0.2s ease-in;
+}
+
+#equal {
+  background-color: green;
+  color: white;
+  transition: 0.1s ease-in;
+}
+
+#equal:hover {
+  background-color: red;
+  color: white;
+}
